@@ -1,0 +1,5 @@
+{
+  "*.{ts,tsx}": [
+    "yarn eslint . --ext .ts --ext .tsx --fix"
+  ]
+}
