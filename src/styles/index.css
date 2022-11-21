@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.vertical-timeline-element-icon.vertical-timeline-element-icon--button {
+  box-shadow: none;
+}
+
+.vertical-timeline-element-icon.vertical-timeline-element-icon--button .fab-button {
+  width: 40px;
+  height: 40px;
+}
+
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline-element-icon.vertical-timeline-element-icon--button .fab-button {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+
+.vertical-timeline-element-icon.vertical-timeline-element-icon--button svg {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  left: auto;
+  top: auto;
+  margin-left: auto;
+  margin-top: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #222831; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #D8D8D8; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00ADB5; 
+}
+
