@@ -4,10 +4,10 @@ export function Follow() {
   return (
     <div className="w-full h-full flex flex-col items-center text-center bg-gray-700">
     <Heading>
-        <h1 className="text-[124px] opacity-10 font-bold">Follow Me</h1>
+        <h1 className="text-[124px] opacity-10 font-bold xs:text-[50px]">Follow Me</h1>
     </Heading>
     <Heading>
-        <h1 className="text-[64px] mt-[-140px] font-bold">Follow Me</h1>
+        <h1 className="text-[64px] mt-[-140px] font-bold xs:text-[38px] xs:mt-[-60px]">Follow Me</h1>
     </Heading>
     <div className="flex gap-3 py-10">
       <a href="https://medium.com/@atirson.oliveira" target="_blank" rel="noreferrer">

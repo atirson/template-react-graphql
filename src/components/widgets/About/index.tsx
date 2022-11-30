@@ -9,11 +9,11 @@ export function About() {
     <>
       <div className="text-left w-full mt-[-50px] max-w-[1200px] mb-4">
         <Heading asChild>
-          <h1 className="text-[250px] h-[300px] font-bold opacity-10">HELLO</h1>
+          <h1 className="xl:text-[250px] h-[300px] xs:text-[120px] xs:mt-10 font-bold opacity-10 xs:text-center xl:text-left">HELLO</h1>
         </Heading>
 
-        <div className="flex flex-row w-full">
-          <div className="w-full">
+        <div className="flex xl:flex-row w-full xs:flex-col-reverse">
+          <div className="w-full xs:px-4">
             <Heading asChild>
               <h1 className="text-[64px] font-bold">I'm</h1>
             </Heading>
@@ -40,7 +40,7 @@ export function About() {
             
           </div>
           <div className="flex justify-center items-center w-full mt-[-120px]">
-            <div className="mask mask-hexagon w-[400px] h-[400px] bg-main">
+            <div className="mask mask-hexagon xl:w-[400px] xl:h-[400px] bg-main xs:w-[300px] xs:h-[300px]">
               <img src={ProfileImage} alt="Profile" />
             </div>
           </div>

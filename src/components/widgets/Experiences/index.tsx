@@ -58,10 +58,10 @@ export function Experiences() {
   return (
     <div className="w-full h-full text-center">
       <Heading>
-          <h1 className="text-[104px] opacity-10 font-bold">Experiences</h1>
+          <h1 className="xl:text-[104px] opacity-10 font-bold xs:text-[50px] ">Experiences</h1>
       </Heading>
       <Heading>
-          <h1 className="text-[64px] mt-[-120px] font-bold">Experiences</h1>
+          <h1 className="xl:text-[64px] xl:mt-[-120px] xs:mt-[-60px] xs:text-[38px] font-bold">Experiences</h1>
       </Heading>
      <div className="text-left mt-10">
       <VerticalTimeline>
