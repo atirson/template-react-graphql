@@ -9,7 +9,7 @@ export function Follow() {
     <Heading>
         <h1 className="text-[64px] mt-[-140px] font-bold xs:text-[38px] xs:mt-[-60px]">Follow Me</h1>
     </Heading>
-    <div className="flex gap-3 py-10">
+    <div className="flex gap-3 py-10 xs:flex-col xl:flex-row items-center">
       <a href="https://medium.com/@atirson.oliveira" target="_blank" rel="noreferrer">
         <img src="https://img.shields.io/badge/medium-%23292929.svg?&style=for-the-badge&logo=medium&logoColor=white" width={150} alt="medium"/>
       </a>
