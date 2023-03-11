@@ -6,8 +6,13 @@ import { Experiences } from '@app/components/widgets/Experiences';
 
 import 'react-vertical-timeline-component/style.min.css';
 import { Follow } from '@app/components/widgets/Follow';
+import { getProfileInfo } from '@app/core/graphql/getProfileInfo';
 
 export function Home() {
+  const { data, error } = getProfileInfo();
+
+  console.log(data, error);
+
   return (
     <div
       style={{ backgroundImage: `url(${Background})` }}
