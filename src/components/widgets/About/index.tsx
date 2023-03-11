@@ -15,10 +15,10 @@ export function About() {
         <div className="flex xl:flex-row w-full xs:flex-col-reverse">
           <div className="w-full xs:px-4">
             <Heading asChild>
-              <h1 className="text-[64px] font-bold">I'm</h1>
+              <h1 className="xs:text-[64px] font-bold">I'm</h1>
             </Heading>
             <Heading asChild color="main">
-              <h1 className="text-[64px] font-bold">Atirson Fabiano</h1>
+              <h1 className="xs:text-[64px] font-bold">Atirson Fabiano</h1>
             </Heading>
 
             <div className="h-1 w-60 bg-main rounded" />
