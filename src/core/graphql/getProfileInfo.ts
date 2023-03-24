@@ -2,19 +2,29 @@ import { useQuery } from 'react-query';
 import { gql } from 'graphql-request';
 import { graphqlClient } from '@app/core/services/graphqlClient';
 
+export type ProfileInfo = {
+  id: string
+  name: string
+  role: string
+  profileImage: {
+    id: string
+    url: string
+  }
+}
+
+type Props = {
+  informations: ProfileInfo[]
+}
+
 export const getProfileInfo = () => {
   return useQuery('profileInfo', async () => {
-    const { informations } = await graphqlClient.request<any>(
+    const { informations } = await graphqlClient.request<Props>(
       gql`
         {
           informations {
-            createdAt
-            description
             id
             name
-            publishedAt
             role
-            updatedAt
             profileImage {
               id
               url
