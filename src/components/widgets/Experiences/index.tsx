@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Heading } from "@app/components/elements/Heading";
 import { ExperienceProps } from "@app/core/types/Experiences";
 import { MdWork as WorkIcon } from 'react-icons/md'
@@ -7,29 +7,22 @@ import { TIMELINE } from "@app/core/constants";
 import { Button } from "@app/components/elements/Button";
 import { AiFillStar } from 'react-icons/ai'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import { getExperiences } from "@app/core/graphql/getExperience";
 
 
 export function Experiences() {
-  const [elements, setElements] = useState<ExperienceProps[]>([
-    {
-      id: '1',
-      props: {
-        date: '2022 - present',
-        className: 'vertical-timeline-element--work',
-        contentStyle: { background: '#222831', color: '#fff' },
-        contentArrowStyle: { borderRight: '7px solid  #222831' },
-        iconStyle: { background: '#222831', color: '#fff' },
-        icon: <WorkIcon />,
-      },
-      title: 'Front-end Developer',
-      subtitle: 'CI&T Software',
-      content:
-        `Working in international project. Development system web using ReactJS, NodeJS, Jest, Azure Devops, Jira, Braze, MongoDB, Segment, New Relic.`,
-    }
-  ]);
+  const { data } = getExperiences();
+
+  const experiences = data !== undefined &&  data[0].object as ExperienceProps[]|| [];
+
+  const [elements, setElements] = useState<ExperienceProps[]>([]);
+
+  useEffect(() => {
+    setElements(experiences.slice(0, 1));
+  }, []);
 
   const loadMore = () => {
-    const arrayFiltered = TIMELINE.slice(0, elements.length + 2);
+    const arrayFiltered = experiences.slice(0, elements.length + 2);
     setElements(arrayFiltered);
   };
 
@@ -46,7 +39,7 @@ export function Experiences() {
 
   const getTimelineElements = () =>
     elements.map((element, index) => (
-      <VerticalTimelineElement key={index} {...element.props}>
+      <VerticalTimelineElement icon={<WorkIcon />} key={index} {...element.props}>
         <h3 className="vertical-timeline-element-title">{element.title}</h3>
         <h4 className="vertical-timeline-element-subtitle">
           {element.subtitle}

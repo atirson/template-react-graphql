@@ -12,7 +12,7 @@ export interface HeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
 export function Heading({
   color = 'light', size = 'md', asChild, children, ...props
 }: HeadingProps) {
-  const Comp = asChild ? Slot : 'h2';
+  const Comp = asChild ? Slot : 'div';
 
   return (
     <Comp

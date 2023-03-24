@@ -10,7 +10,7 @@ export type ExperienceProps = {
     contentStyle: CSSProperties | undefined,
     contentArrowStyle: CSSProperties | undefined,
     iconStyle: CSSProperties | undefined,
-    icon: ReactNode | undefined,
+    icon?: boolean | string | undefined,
   },
   title: string,
   subtitle: string,

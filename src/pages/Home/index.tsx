@@ -7,11 +7,15 @@ import { Experiences } from '@app/components/widgets/Experiences';
 import 'react-vertical-timeline-component/style.min.css';
 import { Follow } from '@app/components/widgets/Follow';
 import { getProfileInfo } from '@app/core/graphql/getProfileInfo';
+import { getSkills } from '@app/core/graphql/getSkills';
+import { getExperiences } from '@app/core/graphql/getExperience';
 
 export function Home() {
-  const { data, error } = getProfileInfo();
+  // const { data, error } = getProfileInfo();
+  // const {data, error } = getSkills()
+  const { data, error } = getExperiences()
 
-  console.log(data, error);
+  // console.log(data !== undefined && data[0].object, error);
 
   return (
     <div
