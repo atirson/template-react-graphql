@@ -1,81 +1,39 @@
-<h1 align='center'>Vite + React + TypeScript + Eslint + Prettier Template ⚡</h1>
+<h1 align='center'>Portfolio with CMS ⚡</h1>
 
-Create a new project with Vite, React JS, TypeScript, Eslint, Prettier in just 1 second and you don't need to setup anything.
+![Banner.png](.github/nfa-portfolio.png)
 
-#### **Vercel Deploy: https://vite-react-ts-eslint-prettier.vercel.app**
+## **Tools 🛠️**
 
-![image](https://user-images.githubusercontent.com/70432453/170648662-2ff424b9-74e9-4754-a04d-512fe1496a3b.png)
+<div align="center">
+  <a href="https://reactjs.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg" alt="React" height="50" /></a> 
+  <a href="https://www.typescriptlang.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/typescript-original.svg" alt="TypeScript" height="50" /></a>  
+  <a href="https://graphql.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/graphql.png" alt="GraphQL" height="50" /></a> 
+  <a href="https://hygraph.com/docs/getting-started" target="_blank">
+    <img style="margin: 10px"  src=".github/hygraph.png"  height="50"  />
+  </a>
+  <a href="https://tanstack.com/query/v4/docs/react/overview" target="_blank">
+    <img style="margin: 10px"  src=".github/react-query.png"  height="50"  />
+  </a>
+  <a href="https://www.tailwindcss.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/tailwindcss.svg" alt="Tailwind CSS" height="50" /></a> 
+</div>
 
-## **Some Features 📋**
+## **Description 📖**
 
-Alias Import
-
-![image](https://user-images.githubusercontent.com/70432453/170644457-ede03cca-44e9-4543-94d3-412c9d317063.png)
-
-Hook Warning
-
-![image](https://user-images.githubusercontent.com/70432453/170638708-23a20ffd-156e-494a-84be-b1e1cfdb5c93.png)
-
-Prettier Warning
-
-![image](https://user-images.githubusercontent.com/70432453/170639043-24423ed1-73cc-4730-b270-2acea1ae0c74.png)
-
-Etc...
+<h4>The project's use the ReactJS like a library Front-end and using Hygraph to expose a endpoint to get all info about Profile, Skills and Experiences. To get the data I'm using React Query + GraphQL. To styles and custom TailwindCSS.  </h4>
+<br />
 
 ## **Using 📦**
 
-1. Clone Template
-
-```
-git clone https://github.com/igdev116/vite-react-ts-eslint-prettier.git
-```
-
-2. Install Packages
+1. Install Packages
 
 ```
 yarn install
 ```
 
-3. Start Project
+2. Start Project
 
 ```
 yarn dev
 ```
 
-4. If you using git, delete the existing folder .git after cloning (open `git bash` or other terminal)
-
-```
-rm -rf .git
-```
-
-## **Options ✍️**
-
-1. Check lint
-
-```
-yarn lint
-```
-
-2. Fix lint
-
-```
-yarn lint:fix
-```
-
-3. Check prettier
-
-```
-yarn prettier
-```
-
-4. Fix prettier
-
-```
-yarn prettier:fix
-```
-
-5. Fix lint and prettier
-
-```
-yarn format
-```
+Obs: To run everthing right you need create a connection with Hygraph and edit the .env file to set the URL.
