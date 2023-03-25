@@ -19,7 +19,7 @@ export function Experiences() {
 
   useEffect(() => {
     setElements(experiences.slice(0, 1));
-  }, []);
+  }, [data]);
 
   const loadMore = () => {
     const arrayFiltered = experiences.slice(0, elements.length + 2);
